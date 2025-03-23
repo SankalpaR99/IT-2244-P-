@@ -1,12 +1,13 @@
-@echo off
+@echo off                        :: Disable command echoing
 
-echo %date%
+echo %date%                       :: Display the current date
 
-set /a year= %date:~10,4%
-set /a month= %date:~4,2%
-set /a day= %date:~7,2%
-set weekday=%date:~0,3%
+set /a year=%date:~10,4%          :: Extract the year from the current date
+set /a month=%date:~4,2%          :: Extract the month from the current date
+set /a day=%date:~7,2%            :: Extract the day from the current date
+set weekday=%date:~0,3%           :: Extract the weekday abbreviation from the current date
 
+:: Convert numeric month to text representation
 if %month%==1 set month=Jan
 if %month%==2 set month=Feb
 if %month%==3 set month=Mar
@@ -20,18 +21,9 @@ if %month%==10 set month=Oct
 if %month%==11 set month=Nov
 if %month%==12 set month=Dec
 
-echo Year : %year% 
-echo Month : %month% 
-echo Day : %day% 
-echo Weekday : %weekday% 
+echo Year : %year%                :: Display the extracted year
+echo Month : %month%               :: Display the extracted month (as text)
+echo Day : %day%                   :: Display the extracted day
+echo Weekday : %weekday%           :: Display the extracted weekday
 
-pause
-
-::how to get 03 as March or Mar
-
-
-
-
-
-
-
+pause                             :: Wait for user to press a key before closing
