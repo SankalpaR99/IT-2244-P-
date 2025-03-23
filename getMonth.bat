@@ -1,11 +1,7 @@
-@echo off
+@echo off                        :: Disable command echoing
 
-echo %date%
+echo %date%                       :: Display the current date
 
-set /a month= %date:~4,2%
-echo Month: %month% 
-pause
-
-::Hw - week, month, day of the yr
-172.16.140.150
-789*asd
+set /a month=%date:~4,2%          :: Extract the month from the current date (substring starting from position 4 with length 2)
+echo Month: %month%                :: Display the extracted month
+pause                            :: Wait for user to press a key before closing
