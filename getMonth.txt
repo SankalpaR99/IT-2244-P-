@@ -1,0 +1,8 @@
+@echo off
+
+echo %date%
+
+set /a month= %date:~4,2%
+echo Month: %month% 
+pause
+
