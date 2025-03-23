@@ -1,48 +1,24 @@
-
-touch abc.tsv
-
-vi abc.tsv
-
-ls -a
-
-cut -d$'\t' -f1 abc.tsv
-
-cut -d " " -f3 abc.tsv
-
-head -n2 abc.tsv
-
-tail -n2 abc.tsv
-
-vi abc.tsv
-
-cut -d\t -f1 abc.tsv
-
-cut -d ' ' -f1 abc.tsv
-
-cut -d ' ' -f2 abc.tsv
-
-head abc.tsv
-
-head -8 abc.tsv
-
-tail -8 abc.tsv
-
-head -1 abc.tsv
-
-tail -1 abc.tsv
-
-head -n8 abc.tsv | tail -n1
-
-awk '{print}' abc.tsv
-
-awk '{print NF; exit}' abc.tsv
-
-awk -F'\t' '{print NF; exit}' abc.tsv
-
-awk '{print $3}' abc.tsv
-
-wc -l abc.tsv
-
-head -n10 abc.tsv | grep 'dd'
-
-head -n7 abc.tsv | grep '56'
+touch abc.tsv                     # Create an empty file named abc.tsv
+vi abc.tsv                         # Open abc.tsv file in the vi text editor
+ls -a                              # List all files in the current directory, including hidden files
+cut -d$'\t' -f1 abc.tsv           # Cut the first column (delimited by tab) from abc.tsv and display it
+cut -d " " -f3 abc.tsv            # Cut the third column (delimited by space) from abc.tsv and display it
+head -n2 abc.tsv                  # Display the first 2 lines of abc.tsv
+tail -n2 abc.tsv                  # Display the last 2 lines of abc.tsv
+vi abc.tsv                        # Reopen the abc.tsv file in the vi editor to edit it
+cut -d\t -f1 abc.tsv              # Cut the first column (delimited by tab) from abc.tsv and display it (same as earlier, but written differently)
+cut -d ' ' -f1 abc.tsv            # Cut the first column (delimited by space) from abc.tsv and display it
+cut -d ' ' -f2 abc.tsv            # Cut the second column (delimited by space) from abc.tsv and display it
+head abc.tsv                      # Display the first 10 lines of abc.tsv (default for head command)
+head -8 abc.tsv                   # Display the first 8 lines of abc.tsv
+tail -8 abc.tsv                   # Display the last 8 lines of abc.tsv
+head -1 abc.tsv                   # Display the first line of abc.tsv
+tail -1 abc.tsv                   # Display the last line of abc.tsv
+head -n8 abc.tsv | tail -n1       # Display the 8th line of abc.tsv (using head to get first 8 lines and then tail to get the last line)
+awk '{print}' abc.tsv              # Use awk to print all lines from abc.tsv (same as cat abc.tsv)
+awk '{print NF; exit}' abc.tsv     # Use awk to print the number of fields (columns) in the first line and then exit
+awk -F'\t' '{print NF; exit}' abc.tsv  # Use awk with tab as the delimiter to print the number of fields in the first line and then exit
+awk '{print $3}' abc.tsv           # Use awk to print the third field (column) of each line in abc.tsv
+wc -l abc.tsv                     # Count and display the number of lines in abc.tsv
+head -n10 abc.tsv | grep 'dd'     # Display the first 10 lines of abc.tsv and filter them to only show lines containing 'dd'
+head -n7 abc.tsv | grep '56'      # Display the first 7 lines of abc.tsv and filter them to only show lines containing '56'
