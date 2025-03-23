@@ -27,8 +27,6 @@ echo Weekday : %weekday%
 
 pause
 
-::how to get 03 as March or Mar
-
 
 
 
