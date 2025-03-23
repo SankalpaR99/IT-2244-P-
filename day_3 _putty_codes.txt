@@ -1,0 +1,48 @@
+
+touch abc.tsv
+
+vi abc.tsv
+
+ls -a
+
+cut -d$'\t' -f1 abc.tsv
+
+cut -d " " -f3 abc.tsv
+
+head -n2 abc.tsv
+
+tail -n2 abc.tsv
+
+vi abc.tsv
+
+cut -d\t -f1 abc.tsv
+
+cut -d ' ' -f1 abc.tsv
+
+cut -d ' ' -f2 abc.tsv
+
+head abc.tsv
+
+head -8 abc.tsv
+
+tail -8 abc.tsv
+
+head -1 abc.tsv
+
+tail -1 abc.tsv
+
+head -n8 abc.tsv | tail -n1
+
+awk '{print}' abc.tsv
+
+awk '{print NF; exit}' abc.tsv
+
+awk -F'\t' '{print NF; exit}' abc.tsv
+
+awk '{print $3}' abc.tsv
+
+wc -l abc.tsv
+
+head -n10 abc.tsv | grep 'dd'
+
+head -n7 abc.tsv | grep '56'
