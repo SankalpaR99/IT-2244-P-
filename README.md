@@ -8,6 +8,7 @@ Outputs:
 
 
 Q1) Get the calander and date
+
 ![q1](https://github.com/user-attachments/assets/3b257bac-b04a-4e7a-9b77-6a99a581b5cf)
 
 
