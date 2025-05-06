@@ -48,9 +48,10 @@ Q6)	Compare two numbers which input
 
 Q7)	Create simple calculator using "expr" command same as the Q3
 
+![q7 vi](https://github.com/user-attachments/assets/78f5d8ae-2f39-4daf-b83d-9349c6105acb)
+
 ![q7](https://github.com/user-attachments/assets/a826c983-3804-46df-9933-e65dee427191)
 
-![q7 vi](https://github.com/user-attachments/assets/78f5d8ae-2f39-4daf-b83d-9349c6105acb)
 
 
 
