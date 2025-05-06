@@ -1,0 +1,70 @@
+Q1)Fibonacci series
+Output: First 10 fibonacci numbers
+0 1 1 2 3 5 8 13 21 34
+
+echo "Enter number: "
+read number
+
+fibonacci(){
+local a=0;
+local b=1;
+local count=$1
+
+	echo "First $count fibonacci numbers"
+	for((i=0;i<$count;i++))
+	do
+		echo -n "$a "
+		local fn=$((a+b))
+		a=$b
+		b=$fn
+	done
+}
+fibonacci number
+
+
+
+
+
+
+
+*******************
+
+
+Q2)Factorial
+Output: Factorial of 5 is: 120
+
+
+echo "Enter number to find factorial: "
+read number
+fact=1
+for ((i=number;i>0;i--))
+do
+fact=$((fact * i))
+done
+
+echo "Factorial of $number is: $fact"
+
+
+
+
+
+*******************
+
+
+Q3)Find multiples of 1-50
+
+
+for((i=1;i<=50;i++))
+do
+	rem=$(($i%3))
+	if [ $rem == 0 ]
+	then
+		echo -n "$i ";
+		echo ""
+	fi
+done
+
+
+*******************
+
+
