@@ -27,7 +27,7 @@ Q3) Print the integers from 1-10 using while loop
 ![q3](https://github.com/user-attachments/assets/8d7552ca-f237-4d2f-8a0f-90c7c525ab8f)
 
 
-Q4) Print the following patterns
+Q4) Print the patterns
 
 a)
 
