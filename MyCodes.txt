@@ -51,7 +51,7 @@ echo "Factorial of $number is: $fact"
 *******************
 
 
-Q3)Find multiples of 1-50
+Q3)Find multiples of 3 in 1-50
 
 
 for((i=1;i<=50;i++))
