@@ -1,0 +1,136 @@
+Q1)Write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number (use switch case)
+
+ex:-
+Date : 23
+
+calculation for life path number:
+a= date%10		3
+b= date/10		2
+c = a+b			5
+
+if life path number:
+1: Lucky
+2: careful do your works
+3: stronger
+4: Happy
+5: can get help
+6: Doubt
+7: Sad
+8: Like
+9: Courage
+
+
+
+----ANSWER----
+
+echo "Enter your Birth date: ";
+read date;
+a=$(($date % 10))
+b=$(($date / 10))
+c=$(($a + $b))
+case $c in
+1)echo "Lucky";;
+2)echo "careful do your works";;
+3)echo "stronger";;
+4)echo "Happy";;
+5)echo "can get help";;
+6)echo "Doubt";;
+7)echo "Sad";;
+8)echo "Like";;
+9)echo "Courage";;
+*)echo "Inavlid life path number";;
+esac
+
+
+
+***********************************************************
+
+
+Q2)Give list of numbers then calculate the summation and multiplication using for loop
+ex:-
+1 2 3 4 5
+	Summation = 15
+	Multiplication = 120
+	
+	
+	
+----ANSWER----
+
+numbers=(1 2 3 4 5)
+sum=0
+mul=1
+for num in "${numbers[@]}"
+do
+sum=$((sum + num))
+mul=$((mul * num))
+done
+echo "Numbers: ${numbers[*]}"
+echo "Summation = $sum"
+echo "Multiplication = $mul"
+
+
+
+***********************************************************
+
+
+Q3) Print the integers from 1-10 using while loop
+
+----ANSWER----
+
+num=1
+while [ $num -le 10 ]
+do
+echo "${num}"
+num=$((num+1))
+done
+
+
+
+
+***********************************************************
+
+
+Q4) Print the following patterns
+	a)rows = 7, columns = 7
+		*
+		* *
+		* * *
+		* * * *
+		* * * * *
+		* * * * * * 
+		* * * * * * *
+		
+	b)
+		* * * * * * *
+		* * * * * * 
+		* * * * *
+		* * * *
+		* * *
+		* *
+		*
+		
+	c)
+		
+		
+		
+	----ANSWER---
+	
+	a)
+		for((i=1; i<=7; i++))
+		do
+		for((j=0; j<i; j++))
+		do
+		echo -n "* ";
+		done
+		echo ""
+		done
+		
+	b)
+		for((i=1; i<=7; i++))
+		do
+		for((j=7; j>=i; j--))
+		do
+		echo -n "* "
+		done
+		echo ""
+		done
