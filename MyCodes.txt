@@ -1,0 +1,285 @@
+Q1) Get the calander and date
+
+---ANS---
+
+cal
+date
+
+
+					---OUTPUT---
+
+			
+				 April 2025
+			Su Mo Tu We Th Fr Sa
+				   1  2  3  4  5
+			 6  7  8  9 10 11 12
+			13 14 15 16 17 18 19
+			20 21 22 23 24 25 26
+			27 28 29 30
+
+			
+			Fri Apr  4 01:25:14 PM +0530 2025
+			
+			
+*************************************************************
+
+
+Q2) Get the student name and marks for 3 subjects from the user and calculate Total marks
+
+Expected output:-
+	Enter the name : Sanka
+	Enter Sub-1 marks : 80
+	Enter Sub-2 marks : 90
+	Enter Sub-3 marks : 70
+	Total : 
+	Average :
+	
+	
+---ANS---
+
+vi Q2.sh
+			
+echo "Enter the name : "
+read name
+echo "Enter Sub-1 marks : "
+read sub1
+echo "Enter Sub-2 marks : "
+read sub2
+echo "Enter Sub-3 marks : "
+read sub3
+sum=$(($sub1+$sub2+$sub3))
+avg=$(($sum/3))
+echo "Total : " $sum
+echo "Average : "$avg
+		
+chmod 777 Q2.sh
+./Q2.sh
+
+					---OUTPUT---
+
+			
+			Enter the name :
+			Sanka
+			Enter Sub-1 marks :
+			75
+			Enter Sub-2 marks :
+			80
+			Enter Sub-3 marks :
+			85
+			Total :  240
+			Average :  80
+
+			
+*************************************************************			
+			
+
+	
+Q3) Create a calculator with arithmetic operations
+
+Expected output:-
+	Enter num1 :
+	Enter num2 :
+	Sum :
+	Sub :
+	Div :
+	Mul :
+	
+---ANS---
+
+vi Q3.sh
+
+echo "Enter num1 : "
+read num1
+echo "Enter num2 : "
+read num2
+sum=$(($num1+$num2))
+sub=$(($num1-$num2))
+div=$(($num1/$num2))
+mul=$(($num1*$num2))
+echo "Sum : " $sum
+echo "Sub : " $sub
+echo "Div : " $div
+echo "Mul : " $mul
+
+chmod 777 Q3.sh
+./Q3.sh
+
+					---OUTPUT---
+			
+			Enter num1 :
+			50
+			Enter num2 :
+			5
+			Sum :  55
+			Sub :  45
+			Div :  10
+			Mul :  250
+
+*************************************************************
+
+Q4)	Get the days based on the user input number
+
+Expected output:-
+	Enter the number : 5
+	Friday
+	Enter the number : -9
+	Unrecognized number
+	
+
+---ANS---
+	
+vi Q4.sh
+	
+echo "Enter the number : "
+read num
+case $num in
+1)echo "Monday";;
+2)echo "Tuesday";;
+3)echo "Wednesday";;
+4)echo "Thursday";;
+5)echo "Friday";;
+6)echo "Saturday";;
+7)echo "Sunday";;
+*)echo "Unrecognized number!";;
+esac
+
+
+chmod 777 Q4.sh
+./Q4.sh
+
+					---OUTPUT---
+			
+			Enter the number :
+			-9
+			Unrecognized number!-9
+			Enter the number :
+			3
+			Wednesday
+
+
+*************************************************************
+
+Q5) Verify whether the user name is correct or not(use your user name as "Mino")
+
+Expected output:-
+	Enter user name: 
+	Mino
+	User name is correct
+	Enter user name: 
+	Pasi
+	User name is incorrect
+	
+	
+---ANS---
+
+vi Q5.sh
+
+
+username="Mino"
+echo "Enter user name: "
+read name
+if [ "$username" = "$name" ];
+then
+echo "User name is correct"
+else
+echo "User name is incorrect"
+fi
+
+
+chmod 777 Q5.sh
+./Q5.sh
+
+
+					---OUTPUT---
+			
+			Enter user name :
+			Pasi
+			Username is incorrect
+			Enter user name :
+			Mino
+			Username is correct
+	
+	
+*************************************************************
+
+Q6)	Compare two numbers which input
+Output:- 
+	Enter two numbers:
+	7 5
+	7 is greater than 5
+	
+Output:- 
+	Enter two numbers:
+	1 9
+	1 is less than 9
+	
+	
+---ANS---
+
+vi Q6.sh
+
+echo "Enter two numbers : "
+read num1 num2
+if(($num1>$num2)); then
+echo "$num1 is greater than $num2"
+elif(($num1<$num2)); then
+echo "$num1 is less than $num2"
+else
+echo "Both numbers are same"
+fi
+
+chmod 777 Q6.sh
+./Q6.sh
+
+
+				---OUTPUT---
+			
+			Enter two numbers :
+			5 7
+			5 is less than 7
+
+			Enter two numbers :
+			7 5
+			7 is greater than 5
+
+
+
+
+*************************************************************
+
+Q7)	Create simple calculator using "expr" command same as the Q3
+
+
+vi Q7.sh
+
+echo "Enter num1 : "
+read num1
+echo "Enter num2 : "
+read num2
+
+sum=$(expr $num1 + $num2)
+sub=$(expr $num1 - $num2)
+div=$(expr $num1 / $num2)
+mul=$(expr $num1 \* $num2)
+
+echo "Sum : $sum"
+echo "Sub : $sub"
+echo "Div : $div"
+echo "Mul : $mul"
+
+chmod 777 Q7.sh
+./Q7.sh
+
+
+				---OUTPUT---
+			
+			Enter num1 :
+			12
+			Enter num2 :
+			4
+			Sum : 16
+			Sub : 8
+			Div : 3
+			Mul : 48
+
+	
