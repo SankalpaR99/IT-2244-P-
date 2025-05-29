@@ -28,3 +28,10 @@ Q2)
 ![image](https://github.com/user-attachments/assets/4afe8d53-e4f0-4b26-ac8a-c7f7afb4411f)
 
 
+**********************************************************************************************
+
+Q3)
+
+![image](https://github.com/user-attachments/assets/b3d9a7ed-a52c-4071-a9cc-c0d1af4ead28)
+
+
