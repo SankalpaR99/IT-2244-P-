@@ -7,7 +7,7 @@ Day 11
 Outputs:
 
 
-
+Q1)
 
 ![image](https://github.com/user-attachments/assets/5f85eccb-3335-4cf2-8dcb-9362f192f696)
 
@@ -20,6 +20,10 @@ Outputs:
 
 ![image](https://github.com/user-attachments/assets/50431d72-80e8-4184-92b1-f18044148e3f)
 
+
+**********************************************************************************************
+
+Q2)
 
 
 
