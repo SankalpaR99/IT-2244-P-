@@ -1,3 +1,5 @@
+Q1) - check whether you are eligible to vote.
+
 #include<stdio.h>
 int main(){
 	int age;
