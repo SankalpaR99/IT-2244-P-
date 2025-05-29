@@ -1,7 +1,13 @@
 IT 2244(P)
+
 Operating Systems
 
+Day 09
 
+Outputs:
+
+Q)
+Read three numbers ( a,b,c ) from the user and store then into three variables. Find the LCM from the first two numbers(a,b) and the GCM for the second two numbers(b,c)
 
 
 
