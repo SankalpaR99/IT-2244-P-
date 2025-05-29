@@ -19,5 +19,6 @@ Outputs:
 3)
 ![q3](https://github.com/user-attachments/assets/67721c5c-9e44-4e97-89cd-cf0e212a61bc)
 
-
+4)
+![image](https://github.com/user-attachments/assets/7950f366-a36f-4a72-9a5b-5f445244cc3e)
 
