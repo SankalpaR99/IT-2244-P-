@@ -5,6 +5,8 @@ Print multiplication table using for loop
 
 ---ANS--- (mulTable.sh)
 
+Code:
+
 echo "Enter multiplier: "
 read x
 
@@ -15,7 +17,8 @@ echo "$i x $x = $ans"
 done
 
 
-************
+**************************************************************************
+
 
 Q2)
 		     *
@@ -31,6 +34,9 @@ Q2)
 
 ---ANS---    (diamondRect.sh)	
 			 
+			 
+Code:
+
 for((i=1; i<=7; i++))
 do
 	for((j=1; j<=7-i; j++))
@@ -58,45 +64,57 @@ do
 done
 
 
-************
+**************************************************************************
 
-Q3)
 
-*****
-*	*
-*	*
-*	*
-*****
-	
+Q3)sum of the first 10 fibbonacci series
 
-for((i=1; i<=5; i++))
+---ANS---    (sumFibo.sh)	
+			  
+Code:
 
-do
-	if((i==1 || i==5)); 
-	then
-	echo "*****"
-	else
-		echo "*   *"
-	fi
+a=0
+b=1
+
+for (( i=0; i<10; i++))
+do echo $a
+echo ""
+c=$(($a+$b))
+sum=$(($sum+$a))
+a=$b
+b=$c
 done
 
+echo "Sum of the first 10 fibbonacci numbers: "  $sum
 
 
-************
+**************************************************************************
 
 
-Q5)
-Check if a file exists
-Output:
-filename="/home/user/nonexixtent.txt"
-File '/home/user/nonexixtent.txt' does not exist.
+Q4)sum of prime numbers from 1 to 100
 
-************
+---ANS---    (sumPrime.sh)	
+			  
+Code:
 
 
-Q6)
-Using a while loop to read a file line-by-line
-output:
-Number of .txt files: 3
+sum=0
 
+for (( num=2; num<=100; num++ ))
+do
+    is_prime=1
+    for (( i=2; i*i<=num; i++ ))
+    do
+        if (( num % i == 0 )); then
+            is_prime=0
+            break
+        fi
+    done
+
+    if (( is_prime == 1 )); then
+        sum=$((sum + num))
+    fi
+done
+
+echo "Sum of prime numbers from 1 to 100 is: $sum"
 
