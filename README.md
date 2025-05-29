@@ -25,5 +25,6 @@ Q1)
 
 Q2)
 
+![image](https://github.com/user-attachments/assets/4afe8d53-e4f0-4b26-ac8a-c7f7afb4411f)
 
 
