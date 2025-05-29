@@ -4,7 +4,14 @@ Operating Systems
 
 Day 13
 
+
+****************************************************************************************************
+
+
 Outputs:
+
+
+****************************************************************************************************
 
 
 Q1) Check whether you are eligible to vote.
@@ -41,6 +48,9 @@ Q4) Life path number
 Q5) Fibbonacci Series
 
 ![image](https://github.com/user-attachments/assets/25ceb59a-8a07-40c9-820b-56c036575fc8)
+
+
+****************************************************************************************************
 
 
 Q6) Factorial for non-negative numbers
