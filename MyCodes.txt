@@ -1,0 +1,102 @@
+Q1)
+Print multiplication table using for loop
+1 x 2 = 2
+2 x 2 = 4
+
+---ANS--- (mulTable.sh)
+
+echo "Enter multiplier: "
+read x
+
+for((i=1;i<=12;i++))
+do
+ans=$((x*i))
+echo "$i x $x = $ans"
+done
+
+
+************
+
+Q2)
+		     *
+		    ***
+		   *****
+		  *******
+		 *********
+		  *******
+		   *****
+		    ***
+		     *
+		
+
+---ANS---    (diamondRect.sh)	
+			 
+for((i=1; i<=7; i++))
+do
+	for((j=1; j<=7-i; j++))
+	do
+		echo -n " ";
+	done
+	for((k=1; k<2*i; k++))
+	do
+		echo -n "*";
+	done
+	echo ""
+done
+
+for((i=6; i>=1; i--))
+do
+	for((j=1; j<=7-i; j++))
+	do
+		echo -n " ";
+	done
+	for((k=1; k<2*i; k++))
+	do
+		echo -n "*";
+	done
+	echo ""
+done
+
+
+************
+
+Q3)
+
+*****
+*	*
+*	*
+*	*
+*****
+	
+
+for((i=1; i<=5; i++))
+
+do
+	if((i==1 || i==5)); 
+	then
+	echo "*****"
+	else
+		echo "*   *"
+	fi
+done
+
+
+
+************
+
+
+Q5)
+Check if a file exists
+Output:
+filename="/home/user/nonexixtent.txt"
+File '/home/user/nonexixtent.txt' does not exist.
+
+************
+
+
+Q6)
+Using a while loop to read a file line-by-line
+output:
+Number of .txt files: 3
+
+
