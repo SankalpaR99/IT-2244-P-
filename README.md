@@ -22,3 +22,12 @@ Outputs:
 4)
 ![image](https://github.com/user-attachments/assets/7950f366-a36f-4a72-9a5b-5f445244cc3e)
 
+5)
+![image](https://github.com/user-attachments/assets/f9428375-c750-4648-8ca8-0ff3c54f641d)
+
+
+
+
+
+
+5)
