@@ -1,2 +1,15 @@
 IT 2244(P)
 Operating Systems
+
+
+
+1) fork6.c
+
+![image](https://github.com/user-attachments/assets/18085e99-061e-4e16-9d34-2100d9a280f4)
+
+
+2) fork7.c
+
+![image](https://github.com/user-attachments/assets/0d2aba92-59a5-42c1-9942-f50a8ff29fc8)
+
+
