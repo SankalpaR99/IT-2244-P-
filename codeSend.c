@@ -2,9 +2,9 @@
 
 
 #include <stdio.h>
-#include <sys/ipc.h>
-#include <sys/msg.h>
-#define MAX 10
+#include <sys/ipc.h> //for inter process communication
+#include <sys/msg.h> //for message passing
+#define MAX 100    //declarinmg maximum size
 
 //structure for msg queue
 
