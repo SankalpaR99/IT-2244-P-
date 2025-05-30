@@ -1,7 +1,7 @@
 //recieve
 #include <stdio.h>
 #include <sys/ipc.h> //inter process communication
-#include <sys/msg.h>
+#include <sys/msg.h> //for message passing
 
 //structure for msg queue
 
